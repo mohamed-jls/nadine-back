@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 // MongoDB Connection Function
 const connectDB = async () => {
     try {
-        await mongoose.connect("mongodb://localhost:27017/mydatabase");
+        await mongoose.connect("mongodb+srv://nadineismaili92:9lQOXHBJ9jYehrRt@cluster0.wei7l7w.mongodb.net/shop");
         console.log("MongoDB Connected");
     } catch (err) {
         console.error("MongoDB Connection Error:", err);
